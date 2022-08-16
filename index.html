@@ -2,23 +2,27 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="style.css">
-
-    <script src="https://kit.fontawesome.com/2ec5147065.js" crossorigin="anonymous"></script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ágape Spagnol</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.coFm">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cookie&family=Montserrat:wght@300&family=Mrs+Saint+Delafield&family=Tangerine&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <a class="navbar-brand" href="#">
-                <img src="assets/Perfil.jpeg" alt="Logo" id="logo">
+                Ágape <br> Spagnol
+                <!-- <img src="assets/Perfil.jpeg" alt="Logo" id="logo"> -->
             </a>
 
             <!-- Links -->
@@ -39,38 +43,33 @@
 
         </nav>
     </header>
-    <div class="menu">
+    <div class="menu-mobile">
         <div class="title" onclick="f()">Ágape Spagnol <span class="fas fa-bars"></span>
             <div class="arrow"></div>
         </div>
         <div class="dropdown">
             <a class="nav-link" href="#">Início <span class="fa fa-home"></span></a>
             <a class="nav-link" href="#">Sobre Mim <span class="fa fa-user"></span></a>
-            <a class="nav-link" href="#">Projeto <span class="fa fa-th"></span></a>
+            <a class="nav-link" href="#">Projetos <span class="fa fa-th"></span></a>
             <a class="nav-link" href="#">Contato <span class="fa fa-envelope"></span></a>
-    
+
         </div>
     </div>
 
-    <main>
-        
-    </main>
+    <div class="container">
+        <main>
+            <div class="text">
+                <h1>Olá! Me chamo Ágape Spagnol.</h1>
+                <p>Uma apaixonada desenvolvedora de frontend do Brasil.</p>
+            </div>
+            <img src="" alt="">
+
+        </main>
+    </div>
 
 
-
-    <script>
-        function f() {
-            document.getElementsByClassName('dropdown')[0].classList.toggle('down');
-            document.getElementsByClassName('arrow')[0].classList.toggle('gone');
-            if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
-                setTimeout(function () {
-                    document.getElementsByClassName('dropdown')[0].style.overflow = 'visible'
-                }, 500)
-            } else {
-                document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden'
-            }
-        }
-    </script>
+    <script src="https://kit.fontawesome.com/2ec5147065.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -18,15 +18,28 @@ body {
 
 header {
     background-color: var(--container-bg-color);
-    width: 175px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     position: fixed;
-    padding: 5px;
+    padding: 0px;
+    margin: 0;
     visibility: visible;
 }
 
-.navbar #logo {
-    width: 100%;
+.navbar {
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    align-items: center;
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-size: 50px;
+    color:	#6495ED /* #FFA500 *//* #A9A9A9 *//* #FF7F50 */;
 }
 
 .navbar-nav {
@@ -35,43 +48,43 @@ header {
 
 .navbar-nav li a {
     color: var(--text-bg-color);
-    align-items: center;
+    /*  align-items: center; */
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 35px 0;
+    padding: 40px 0;
     transition: 0.5s;
 }
 
 .navbar ul li a:hover {
-    color: var(--container-bg-color);
+    color: var(--body-bg-color);
 }
 
-main {
-    display: flex;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.menu {
+.menu-mobile {
     display: none;
 }
 
-.inicio {
-    padding: 70px 0;
+.container {
+    width: 100%;
+    padding: 20px;
+    min-height: auto;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    color: white;
+}
+
+main {
+    align-items: center;
+
 }
 
 @media screen and (max-width: 768px) {
     header {
-
         display: none;
     }
 
-    .menu {
+    .menu-mobile {
         width: 260px;
         margin: 60px auto 0;
         cursor: pointer;
@@ -91,6 +104,8 @@ main {
         padding: 14px;
         border-radius: 4px;
         position: relative;
+        font-family: 'Alex Brush', cursive;
+        font-size: 30px;
         box-shadow: 0 0 40px -10px #000;
         color: var(--container-bg-color);
     }
